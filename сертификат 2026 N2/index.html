@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jannat Travel - Туристтик агенттик</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+   
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">🏔️ Jannat Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Башкы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Биз жөнүндө</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tours">Турлар</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinations">Популярдуу жерлер</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Байланыш</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Кыргызстандын кооз жерлерин<br>Биз менен ач!</h1>
+                    <p class="hero-subtitle">Эң мыкты тур пакеттер, арзан баа, ыңгайлуу саякат</p>
+                    <button class="btn btn-hero" id="exploreBtn">Турларды көрүү</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="about" class="about-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Биз жөнүндө</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.pexels.com/photos/2166556/pexels-photo-2166556.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Саякат" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Jannat Travel - сиздин ишенимдүү жолдошуңуз</h3>
+                        <p>Биз 2015-жылдан бери Кыргызстанда жана дүйнө жүзү боюнча саякаттарды уюштуруп келебиз. Ар бир кардарга жекече мамиле, коопсуздук жана ыңгайлуулук – биздин негизги принциптерибиз.</p>
+                        <p>Биздин команда тажрыйбалуу гиддерден, жолдомо кызматкерлерден жана саякат боюнча эксперттерден турат.</p>
+                        <ul class="feature-list">
+                            <li>✅ 5000+ бактылуу кардар</li>
+                            <li>✅ 50+ уникалдуу маршрут</li>
+                            <li>✅ 24/7 кардарларды колдоо</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="tours" class="tours-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Популярдуу турлар</h2>
+                <p class="text-center mb-4">JavaScript + Grid менен көрсөтүлөт</p>
+                <div class="tours-grid" id="toursGrid">
+                 
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="destinations" class="destinations-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">Популярдуу жерлер</h2>
+                <div class="row g-4" id="destinationsRow">
+                
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="reviews" class="reviews-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Кардарлардын пикирлери</h2>
+                <div class="reviews-container" id="reviewsContainer">
+                
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="contact-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Байланыш формасы</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form id="contactForm" class="contact-form p-4 shadow rounded">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Аты-жөнүңүз *</label>
+                                <input type="text" class="form-control" id="name" placeholder="Мисалы: Айбек Асанов">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email дарегиңиз *</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон номериңиз *</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+996 XXX XXX XXX">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Билдирүүңүз</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Кызыккан тур жөнүндө жазыңыз..."></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tourSelect" class="form-label">Кызыккан тур</label>
+                                <select class="form-select" id="tourSelect">
+                                    <option value="">Тандаңыз</option>
+                                    <option value="issyk-kul">Ысык-Көл</option>
+                                    <option value="ala-archa">Ала-Арча</option>
+                                    <option value="son-kul">Соң-Көл</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-submit w-100">Жөнөтүү</button>
+                            <div id="formMessage" class="mt-3 text-center"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>🏔️ Jannat Travel</h3>
+                    <p>Саякаттарыңызды унутпастай кыл!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Шилтемелер</h4>
+                    <ul>
+                        <li><a href="#hero">Башкы</a></li>
+                        <li><a href="#about">Биз жөнүндө</a></li>
+                        <li><a href="#tours">Турлар</a></li>
+                        <li><a href="#contact">Байланыш</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Байланыш</h4>
+                    <p>📞 +996 700 123 456</p>
+                    <p>✉️ info@jannattravel.kg</p>
+                    <p>📍 Бишкек, Чүй пр. 150</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-3">
+                <p> 2026 Jannat Travel. Бардык укуктар корголгон.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
